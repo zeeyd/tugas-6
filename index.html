@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Task List UI</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #d8ccf6;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 30px;
+    }
+    .card {
+      background: #fff;
+      border-radius: 25px;
+      padding: 25px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+      width: 320px;
+    }
+    .calendar-header {
+      background: #f6c88f;
+      border-radius: 15px;
+      padding: 15px;
+      margin-bottom: 20px;
+    }
+    .calendar-header h2 {
+      margin: 0 0 10px;
+      font-size: 18px;
+      color: #5e3f92;
+    }
+    .days {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+      color: #fff;
+    }
+    .dates {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      color: #fff;
+    }
+    .dates div {
+      background: #f18c5f;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 30px;
+    }
+    .dates .active {
+      background: #fff;
+      color: #f18c5f;
+    }
+    .section {
+      margin-bottom: 20px;
+    }
+    .section h3 {
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+    .tasks, .progress, .completed {
+      background: #f0eefc;
+      border-radius: 10px;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="calendar-header">
+      <h2>You Have New Task</h2>
+      <div class="days">Mon Tue Wed <strong>Thu</strong> Fri Sat</div>
+      <div class="dates">
+        <div>11</div><div>12</div><div>13</div>
+        <div class="active">14</div>
+        <div>15</div><div>16</div><div>17</div>
+      </div>
+    </div>
+    <div class="section">
+      <h3>Today</h3>
+      <div class="tasks">3 Tasks</div>
+      <div class="tasks">Up Coming: 5 Tasks</div>
+    </div>
+    <div class="section">
+      <h3>On Progress</h3>
+      <div class="progress"> Task 1</div>
+      <div class="progress"> Task 2</div>
+    </div>
+    <div class="section">
+      <h3>Completed Work</h3>
+      <div class="completed"> Task A</div>
+      <div class="completed"> Task B</div>
+    </div>
+  </div>
+</body>
+</html>
